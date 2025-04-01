@@ -44,15 +44,19 @@ const HeroSection = () => {
     <section 
       id="hero" 
       ref={heroRef}
-      className="relative min-h-screen flex items-center pt-24 bg-gradient"
+      className="relative min-h-screen flex items-center pt-24"
       style={{ 
+        backgroundImage: "url('/lovable-uploads/d1c6ae70-eea1-43a7-b2ea-91d0c65d8f2a.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
         opacity: 0, 
         transform: 'translateY(20px)', 
         transition: 'opacity 0.8s ease, transform 0.8s ease' 
       }}
     >
       {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden bg-netfibra-blue/50">
         <div className="absolute top-1/4 left-1/4 text-netfibra-blue/5">
           <WifiIcon size={120} className="animate-pulse" />
         </div>
@@ -76,7 +80,7 @@ const HeroSection = () => {
           
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 
-              className="cta-button text-lg"
+              className="text-lg text-white bg-netfibra-orange hover:bg-opacity-90 hover:scale-105 transition-all duration-300 px-6 py-6 rounded-lg shadow-lg font-semibold"
               onClick={sendWhatsApp}
             >
               Solicite uma Proposta
@@ -84,7 +88,7 @@ const HeroSection = () => {
             
             <a 
               href="#solucoes" 
-              className="border-2 border-white text-white hover:bg-white hover:text-netfibra-blue text-center text-lg px-6 py-3 rounded-lg transition-all duration-300"
+              className="border-2 border-white text-white hover:bg-white hover:text-netfibra-blue text-center text-lg px-6 py-6 rounded-lg transition-all duration-300 font-semibold"
             >
               Conheça Nossas Soluções
             </a>
