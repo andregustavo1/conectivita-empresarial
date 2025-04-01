@@ -46,7 +46,8 @@ const HeroSection = () => {
       ref={heroRef}
       className="relative min-h-screen flex items-center pt-24"
       style={{ 
-        backgroundImage: "url('/lovable-uploads/3d5da9cf-53cf-4c5f-9092-98e49c73980f.png')",
+        backgroundImage: "url('images/image.png')",
+        backgroundBlendMode: "overlay", 
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -80,7 +81,7 @@ const HeroSection = () => {
           
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 
-              className="text-white bg-netfibra-orange hover:bg-opacity-90 hover:scale-105 transition-all duration-300 px-6 py-3 rounded-md h-auto w-64 text-lg font-semibold"
+              className="text-white bg-netfibra-orange hover:bg-opacity-90 hover:scale-105 transition-all px-3 py-3 duration-300 rounded-md h-auto w-64 text-lg font-semibold"
               onClick={sendWhatsApp}
             >
               Solicite uma Proposta
@@ -88,7 +89,7 @@ const HeroSection = () => {
             
             <a 
               href="#solucoes" 
-              className="border-2 border-white text-white hover:bg-white hover:text-netfibra-blue text-center px-6 py-3 rounded-md h-auto w-64 flex items-center justify-center transition-all duration-300 text-lg font-semibold"
+              className="border-2 border-white text-white hover:bg-white hover:text-netfibra-blue text-center px-3 py-3 rounded-md h-auto w-64 flex items-center justify-center transition-all duration-300 text-lg font-semibold"
             >
               Conheça Nossas Soluções
             </a>
