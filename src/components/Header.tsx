@@ -33,47 +33,61 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center px-4 md:px-6">
         <div className="flex items-center">
           <a href="#hero" className="text-2xl font-bold">
-            <span className="text-netfibra-blue">Net</span>
+            <span className={scrolled ? "text-netfibra-blue" : "text-white"}>Net</span>
             <span className="text-netfibra-orange">Fibra</span>
-            <span className="text-netfibra-blue ml-1">Empresas</span>
+            <span className={scrolled ? "text-netfibra-blue ml-1" : "text-white ml-1"}>Empresas</span>
           </a>
         </div>
 
         <nav className="hidden md:flex items-center space-x-8">
           <a 
             href="#sobre" 
-            className="text-netfibra-blue hover:text-netfibra-orange transition-colors duration-200"
+            className={`hover:text-netfibra-orange transition-colors duration-200 ${
+              scrolled ? 'text-netfibra-blue' : 'text-white'
+            }`}
           >
             Sobre
           </a>
           <a 
             href="#diferenciais" 
-            className="text-netfibra-blue hover:text-netfibra-orange transition-colors duration-200"
+            className={`hover:text-netfibra-orange transition-colors duration-200 ${
+              scrolled ? 'text-netfibra-blue' : 'text-white'
+            }`}
           >
             Diferenciais
           </a>
           <a 
             href="#solucoes" 
-            className="text-netfibra-blue hover:text-netfibra-orange transition-colors duration-200"
+            className={`hover:text-netfibra-orange transition-colors duration-200 ${
+              scrolled ? 'text-netfibra-blue' : 'text-white'
+            }`}
           >
             Soluções
           </a>
           <a 
             href="#processo" 
-            className="text-netfibra-blue hover:text-netfibra-orange transition-colors duration-200"
+            className={`hover:text-netfibra-orange transition-colors duration-200 ${
+              scrolled ? 'text-netfibra-blue' : 'text-white'
+            }`}
           >
             Processo
           </a>
           <a 
             href="#contato" 
-            className="text-netfibra-blue hover:text-netfibra-orange transition-colors duration-200"
+            className={`hover:text-netfibra-orange transition-colors duration-200 ${
+              scrolled ? 'text-netfibra-blue' : 'text-white'
+            }`}
           >
             Contato
           </a>
         </nav>
 
         <Button 
-          className="cta-button hidden md:block"
+          className={`hidden md:block ${
+            scrolled 
+            ? 'cta-button' 
+            : 'bg-transparent text-white border-2 border-white hover:bg-white hover:text-netfibra-blue'
+          }`}
           onClick={sendWhatsApp}
         >
           Solicitar Proposta

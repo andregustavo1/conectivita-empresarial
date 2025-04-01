@@ -84,7 +84,7 @@ const HeroSection = () => {
             
             <a 
               href="#solucoes" 
-              className="cta-button-outlined text-white border-white text-center text-lg"
+              className="border-2 border-white text-white hover:bg-white hover:text-netfibra-blue text-center text-lg px-6 py-3 rounded-lg transition-all duration-300"
             >
               Conheça Nossas Soluções
             </a>
