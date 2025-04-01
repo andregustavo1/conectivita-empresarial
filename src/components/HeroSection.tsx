@@ -1,8 +1,9 @@
 
 import React, { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
-import { WifiIcon, NetworkIcon, ServerIcon } from 'lucide-react';
+import { WifiIcon, ServerIcon } from 'lucide-react';
 
+// Custom NetworkIcon component
 const NetworkIcon = ({ className }: { className?: string }) => (
   <svg 
     xmlns="http://www.w3.org/2000/svg" 
@@ -53,13 +54,13 @@ const HeroSection = () => {
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 text-netfibra-blue/5">
-          <WifiIcon size={120} className="animate-pulse" style={{ animationDuration: '3s' }} />
+          <WifiIcon size={120} className="animate-pulse" />
         </div>
         <div className="absolute top-2/3 right-1/4 text-netfibra-blue/5">
-          <ServerIcon size={80} className="animate-pulse" style={{ animationDuration: '4s' }} />
+          <ServerIcon size={80} className="animate-pulse" />
         </div>
         <div className="absolute bottom-1/4 left-1/3 text-netfibra-blue/5">
-          <NetworkIcon className="w-24 h-24 animate-pulse" style={{ animationDuration: '5s' }} />
+          <NetworkIcon className="w-24 h-24 animate-pulse" />
         </div>
       </div>
 

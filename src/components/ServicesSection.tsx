@@ -1,7 +1,8 @@
 
 import React, { useEffect, useRef } from 'react';
-import { Wifi, Phone, Monitor, Server, HeadsetIcon } from 'lucide-react';
+import { Wifi, Phone, Monitor, Server } from 'lucide-react';
 
+// Custom HeadsetIcon component
 const HeadsetIcon = ({ className }: { className?: string }) => (
   <svg 
     xmlns="http://www.w3.org/2000/svg" 
