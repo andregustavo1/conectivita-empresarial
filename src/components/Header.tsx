@@ -33,9 +33,11 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center px-4 md:px-6">
         <div className="flex items-center">
           <a href="#hero" className="text-2xl font-bold">
-            <span className={scrolled ? "text-netfibra-blue" : "text-white"}>Net</span>
-            <span className="text-netfibra-orange">Fibra</span>
-            <span className={scrolled ? "text-netfibra-blue ml-1" : "text-white ml-1"}>Empresas</span>
+            <img src="/images/PNG 2D.png" 
+                className={`brightness-0 h-20 ${
+                  scrolled ? '' : 'invert'
+                }`} 
+                alt="" />
           </a>
         </div>
 
