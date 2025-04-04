@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
             <h3 className="text-2xl font-bold mb-6">
-              <span className="text-white">Net</span>
-              <span className="text-netfibra-orange">Fibra</span>
-              <span className="text-white ml-1">Empresas</span>
+            <img src="/images/PNG 2D.png" 
+                className={`brightness-0 h-32 invert`} 
+                alt="" />
             </h3>
             <p className="text-gray-400 mb-6">
               Soluções completas em conectividade e infraestrutura de TI para negócios.
